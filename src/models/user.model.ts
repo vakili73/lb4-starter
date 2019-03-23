@@ -38,10 +38,6 @@ export class User extends Entity {
   })
   partners?: string[];
 
-  // Define well-known properties here
-
-  // Indexer property to allow additional data
-  [prop: string]: any;
 
   constructor(data?: Partial<User>) {
     super(data);
