@@ -1,6 +1,6 @@
-import {Entity, model, property} from '@loopback/repository';
+import { Entity, model, property } from '@loopback/repository';
 
-@model({settings: {"strict":false}})
+@model({ settings: { "strict": false } })
 export class User extends Entity {
   @property({
     type: 'string',
@@ -14,6 +14,11 @@ export class User extends Entity {
     required: true,
   })
   code: string;
+
+  @property({
+    type: 'number',
+  })
+  score?: number;
 
   @property({
     type: 'array',
